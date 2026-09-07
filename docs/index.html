@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GIS Metadata Catalogue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="brand">
+        <h1>GIS Metadata Catalogue</h1>
+        <span class="subtitle">municipal spatial datasets</span>
+      </div>
+      <span class="grid-ref">EPSG:28992</span>
+    </header>
+
+    <div class="filter-bar">
+      <input type="search" id="search-input" placeholder="Search by title, keyword, or owner…" aria-label="Search layers" />
+      <select id="theme-select" aria-label="Filter by theme">
+        <option value="">All themes</option>
+      </select>
+    </div>
+
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+
+    <div class="index-list" id="index-list" role="list">
+      <!-- Rows injected by app.js -->
+    </div>
+
+    <footer class="site-footer">
+      Metadata sourced from <code>data/metadata.json</code> · rendered client-side
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

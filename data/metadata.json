@@ -1,0 +1,187 @@
+[
+  {
+    "id": "roads",
+    "title": "Roads",
+    "theme": "Transport",
+
+    "description": {
+      "abstract": "Road network of the municipality, including classification by road type.",
+      "purpose": "Used for transportation analysis, routing, and cartographic base mapping.",
+      "lineage": "Derived from municipal road surveys and updated from as-built drawings."
+    },
+
+    "spatial": {
+      "crs": "EPSG:28992",
+      "bounding_box": {
+        "west": 5.85,
+        "south": 51.95,
+        "east": 5.95,
+        "north": 52.02
+      }
+    },
+
+    "temporal": {
+      "start": "2020-01-01",
+      "end": "2026-08-01"
+    },
+
+    "data": {
+      "geometry": "LineString",
+      "format": "GeoPackage",
+      "encoding": "UTF-8",
+      "scale": "1:1000"
+    },
+
+    "quality": {
+      "accuracy": "0.5 m",
+      "completeness": "95%"
+    },
+
+    "maintenance": {
+      "status": "Active",
+      "frequency": "Monthly",
+      "last_updated": "2026-08-01"
+    },
+
+    "organisation": {
+      "owner": "GIS Team",
+      "contact": "gis@example.com"
+    },
+
+    "access": {
+      "download": "https://example.com/roads.gpkg",
+      "wms": "https://example.com/geoserver/wms",
+      "wfs": "https://example.com/geoserver/wfs"
+    },
+
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+
+    "keywords": ["roads", "transport", "infrastructure"]
+  },
+
+  {
+    "id": "buildings",
+    "title": "Buildings",
+    "theme": "Buildings",
+
+    "description": {
+      "abstract": "Building footprints for the municipal area.",
+      "purpose": "Used for address mapping, planning, and property administration.",
+      "lineage": "Sourced from cadastral records and aerial survey verification."
+    },
+
+    "spatial": {
+      "crs": "EPSG:28992",
+      "bounding_box": {
+        "west": 5.86,
+        "south": 51.96,
+        "east": 5.94,
+        "north": 52.01
+      }
+    },
+
+    "temporal": {
+      "start": "2018-01-01",
+      "end": "2026-07-15"
+    },
+
+    "data": {
+      "geometry": "Polygon",
+      "format": "GeoPackage",
+      "encoding": "UTF-8",
+      "scale": "1:1000"
+    },
+
+    "quality": {
+      "accuracy": "0.3 m",
+      "completeness": "98%"
+    },
+
+    "maintenance": {
+      "status": "Active",
+      "frequency": "Monthly",
+      "last_updated": "2026-07-15"
+    },
+
+    "organisation": {
+      "owner": "GIS Team",
+      "contact": "gis@example.com"
+    },
+
+    "access": {
+      "download": "https://example.com/buildings.gpkg"
+    },
+
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+
+    "keywords": ["buildings", "addresses", "property"]
+  },
+
+  {
+    "id": "green-space",
+    "title": "Green space",
+    "theme": "Environment",
+
+    "description": {
+      "abstract": "Public green space, including parks, verges, and street trees.",
+      "purpose": "Used for ecological planning, maintenance scheduling, and climate adaptation studies.",
+      "lineage": "Digitised from orthophotos and cross-checked with maintenance contracts."
+    },
+
+    "spatial": {
+      "crs": "EPSG:28992",
+      "bounding_box": {
+        "west": 5.84,
+        "south": 51.94,
+        "east": 5.97,
+        "north": 52.03
+      }
+    },
+
+    "temporal": {
+      "start": "2021-03-01",
+      "end": "2026-05-20"
+    },
+
+    "data": {
+      "geometry": "Polygon",
+      "format": "GeoPackage",
+      "encoding": "UTF-8",
+      "scale": "1:2000"
+    },
+
+    "quality": {
+      "accuracy": "1.0 m",
+      "completeness": "90%"
+    },
+
+    "maintenance": {
+      "status": "Under review",
+      "frequency": "Quarterly",
+      "last_updated": "2026-05-20"
+    },
+
+    "organisation": {
+      "owner": "GIS Team",
+      "contact": "gis@example.com"
+    },
+
+    "access": {
+      "download": "https://example.com/green-space.gpkg",
+      "wms": "https://example.com/geoserver/wms"
+    },
+
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+
+    "keywords": ["green space", "parks", "trees", "environment"]
+  }
+]
